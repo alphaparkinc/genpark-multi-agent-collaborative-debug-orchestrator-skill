@@ -1,0 +1,35 @@
+{
+  "name": "genpark-multi-agent-collaborative-debug-orchestrator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-agent collaborative bug reproduction, AST stacktrace analyzer & patch synthesizer.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "multi-agent-debug",
+    "stacktrace-analyzer",
+    "patch-synthesizer",
+    "bug-reproduction",
+    "ph-august-top"
+  ],
+  "inputs": {
+    "error_stacktrace": {
+      "type": "string"
+    },
+    "source_repo_context": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "root_cause_analysis": {
+      "type": "string"
+    },
+    "synthesized_diff_patch": {
+      "type": "string"
+    },
+    "patch_verified": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
